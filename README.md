@@ -1,5 +1,6 @@
 # ascii-converter
 converts images to random ascii text
+
 ![preview](ascii.png)
 ## Usage
 Run the program from the console. The first argument should be the file path. Relative files are supported.
