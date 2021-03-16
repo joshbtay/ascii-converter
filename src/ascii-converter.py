@@ -52,7 +52,7 @@ image = PIL.Image.open(filepath)
 image = PIL.ImageOps.grayscale(image)
 col,row = image.size
 array = np.array(image)
-text = open('input.txt')
+text = open('input.txt', encoding="utf-8")
 output = ""
 if len(sys.argv) > 2:
     output = sys.argv[2]
@@ -104,7 +104,7 @@ def getBound(value: int) -> int:
         bracket -= 1
     return bracket - 1
 
-text_file = open(output, "w")
+text_file = open(output, "w", encoding='utf-8')
 for i,line in enumerate(squashed):
     for pixel in line:
         bound = getBound(pixel)
@@ -113,5 +113,3 @@ for i,line in enumerate(squashed):
     text_file.write('\n')
 text_file.close()
 print("conversion finished ! output is in " + output)
-if len(sys.argv) == 1:
-    input("    press enter to end\n")
