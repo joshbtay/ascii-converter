@@ -9,8 +9,7 @@ Optionally, you can add a second argument to redirect output to another file. Si
 
 If you do not add arguments, you will be prompted for them.
 
-## Installation
-Download [here](http://sourdu.de/windows-ascii-converter.zip) for Windows. For other operating systems, simply
+## Usage
 > git clone https://github.com/joshbtay/ascii-converter.git
 > 
 > cd ascii-converter
